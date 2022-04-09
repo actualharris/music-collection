@@ -2,7 +2,7 @@ package com.example.music;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("Details")
+@Document("Music")
 public class Music {
 	private String name;
 	private String artist;
