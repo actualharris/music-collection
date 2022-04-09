@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<h1>All Music Details</h1>
+<body>
+	<table border="1" cellpadding="10">
+		<tr>
+			<th>Name</th>
+			<th>Genre</th>
+			<th>Artist</th>
+			<th>Year of Release</th>
+		</tr>
+		<tr th:each="b : ${allmusic}">
+			<td th:text="${b.name}"></td>
+			<td th:text="${b.genre}"></td>
+			<td th:text="${b.artist}"></td>
+			<td th:text="${b.yearOfRelease}"></td>
+		</tr>
+	</table>
+	<a href="addmusic">Add Music</a>
+	<a href="editmusic">Edit Music</a>
+	<a href="deletemusic">Delete Music</a>
+</body>
