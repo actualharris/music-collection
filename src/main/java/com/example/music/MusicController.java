@@ -21,7 +21,8 @@ public class MusicController {
 	public String homepage(Model model){
 		return "homepage";
 	}
-	
+
+
 	@GetMapping("/viewmusic")
 	public String viewMusic(Model model) {
 		List<Music> music = repo.findAll();
